@@ -6,7 +6,7 @@ Chrome extension is frontend.
 
 
 ***Setup backend***
-Clone this repository
+- Clone this repository
 - Activate your python environment
 - run '''pip install -r requirements.txt''' to install dependencies
 - Download 'glove.6B.50d.txt' from https://drive.google.com/file/d/1d3caSYaHXVhDf8rYDrr91e4HBdWnDqcz/view?usp=sharing and place under backend folder
