@@ -1,0 +1,290 @@
+<html>
+<title>Test</title>
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+.float_center1 {
+  float: right;
+
+  position: relative;
+  left: -78%; /* or right 50% */
+  text-align: left;
+}
+.float_center1 > .child1 {
+  position: relative;
+  left: 10%;
+}
+
+.float_center2{
+   float: right;
+
+  position: relative;
+  left: -95%; /* or right 50% */
+  text-align: left;
+}
+
+.float_center2 >.child2{
+	position:relative;
+	left: 10%;
+}
+
+
+    h2 {
+       font-size: 24px;
+       color:#000000;
+       font-family: 'Arbutus Slab';font-size: 22px;
+       text-align: center;
+    }
+
+    h3{
+        font-family:"Times New Roman", Times, serif;
+    }
+
+    h5 {
+       font-size: 16px;
+       font-family: "Times New Roman", Times, serif;
+       text-align:center;
+    }
+
+	button {
+    background-color: #000000; 
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 8px;
+    width: 80%;
+    padding: 8px;
+}
+
+
+    .inputbox {
+    border-radius: 25px;
+    border: 1px solid #000000;
+    padding: 10px; 
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    width: 350px;
+    height: 100px;  
+    text-align: center;  
+}
+
+    .support{
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 10px; 
+    font-size: 12px;
+    font-family: "Times New Roman", Times, serif;
+    width: 200px;
+    height: 100px;
+    }
+
+  
+
+    .center{
+        width: 80%;
+        text-align: center;
+    }
+
+    .left{
+        text-align: left;
+    }
+
+    
+
+    .specialbutton{
+        text-align: center;
+    }
+
+    #wrapper{
+        position:absolute;
+        width:350px;
+        float:left;
+        padding: 10px;
+    }
+    
+
+.card {
+  background-color:#eee;
+  box-sizing:border-box;
+  display:inline-block;
+  height:10em;
+  margin:.5em;
+  padding:1em;
+  position:absolute;
+  width:26em;
+}
+
+.progress {
+  bottom:0;
+  left:0;
+  position:absolute;
+  top:0;
+}
+
+.progress:before {
+  animation:slideIn 2s ease-out;
+  background-color:#40E0D0;
+  opacity:0.5;
+  bottom:0;
+  left:0;
+  content:"";
+  position:absolute;
+  top:0;
+  width:100%;
+}
+
+.content {
+  position:relative;
+}
+
+.percentage {
+  text-align:right;
+}
+
+@keyframes slideIn {
+  0% {
+    background-color:#abc;
+    width:0;
+  }
+  100% {
+    background-color:#40E0D0;
+    opacity:0.5;
+    width:100%;
+  }
+}
+
+.nav{
+	list-style-type: none;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+.nav li{
+	display:inline-block;
+	font-size:14px;
+	padding:5px;
+	min-width:120px;
+}
+
+</style>
+<body>
+
+<div class="center">
+<h2>Fake Check  <i class="fa fa-newspaper-o" style="font-size:24px"></i></h2>
+<div class="specialbutton">
+<textarea class="inputbox" type="text" placeholder="Please paste the post here :)" id="input"></textarea> 
+    <br>
+    <br>
+
+    <ul class="nav">
+    <li><button type="button" id="printOutput">Check</button>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+        <script src="popup.js"></script>
+    <li><button type="button" id="printEmergency">Emergency!</button>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+        <script src="popup2.js"></script>
+    </ul> 
+</div>
+</div>
+
+<br>
+<br>
+
+
+<div class="w3-white" style="text-align: left;color: white; font-family:Times New Roman, Times, serif;">
+  <div id="myBar1" class="w3-container w3-black w3-center" style="width:0%; opacity:1;border-radius:5px">Credibility: 0%</div>
+  <br>
+  <br>
+  <div id="myBar2" class="w3-container w3-black w3-center" style="width:0%; opacity:1;border-radius:5px">Sentiment: 0%</div>
+  <br>
+  <br>
+  <div id="myBar3" class="w3-container w3-black w3-center" style="width:0%;opacity:1;border-radius:5px">Truthfulness: 0%</div>
+</div>
+</div>
+
+<br>
+<br>
+
+
+
+
+<div class="float_center1">
+	<ul class="child1">
+<div class="card" >
+  <div class="progress" style="width:70%"></div>
+  <div class="content">
+    <h3 id="stand1">testing</h3>
+    <a id = "url111" href="http://www.google.com">linkeeeee</a>
+    <script>
+    	var url11 = document.getElementById('url111');
+    	var linkurl1 = url11.href;
+    	url11.href="http://wwww.theatlantic.com";
+    </script>
+    <p class="percentage" id="quality1"></p> 
+  </div>
+</div>
+</ul>
+</div>
+
+<div class="float_center1">
+	<ul class="child1">
+<div class="card" >
+  <div class="progress" style="width:70%"></div>
+  <div class="content">
+    <h3 id="stand2">testing</h3>
+    <p id="url2">testing</p>
+    <p class="percentage" id="quality2"></p> 
+  </div>
+</div>
+</ul>
+</div>
+
+<div class="float_center1">
+	<ul class="child1">
+<div class="card" >
+  <div class="progress" style="width:70%"></div>
+  <div class="content">
+    <h3 id="stand3">testing</h3>
+    <p id="url3">testing</p>
+    <p class="percentage" id="quality3"></p> 
+  </div>
+</div>
+</ul>
+</div>
+
+<div class="float_center1">
+	<ul class="child1">
+<div class="card" >
+  <div class="progress" style="width:70%"></div>
+  <div class="content">
+    <h3 id="stand4">testing</h3>
+    <p id="url4">testing</p>
+    <p class="percentage" id="quality4"></p> 
+  </div>
+</div>
+</ul>
+</div>
+
+<div class="float_center1">
+	<ul class="child1">
+<div class="card" >
+  <div class="progress" style="width:70%"></div>
+  <div class="content">
+    <h3 id="stand5">testing</h3>
+    <p id="url5">testing</p>
+    <p class="percentage" id="quality5"></p> 
+  </div>
+</div>
+</ul>
+</div>
+
+
+
+</body>
+</html>
