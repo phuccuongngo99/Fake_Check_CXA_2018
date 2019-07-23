@@ -18,6 +18,7 @@ Clone this repository
 - Turn on 'Developer Mode' in top right hand corner
 - Click 'Load unpacked' in top left hand corner
 - Choose 'frontend_extension' directory in your pc
+
 You should see extension in Chrome now
 
 ***How to run***
