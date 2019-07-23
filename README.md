@@ -22,9 +22,9 @@ You should see extension in Chrome now
 
 ***How to run***
 (The backend part)
--Open terminal and cd to repository directory
--cd backend
--python app.py
+- Open terminal and cd to repository directory
+- cd backend
+- python app.py
 
 Open Chrome extension and input your fake news. 
 
