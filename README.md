@@ -1,8 +1,8 @@
 # Fake_Check_CXA_2018
 CXA 24h Hackathon 2018, Team Singularity, Fake_Check 
 
-The heavy computation part (backend) is handled by the server (only successfully tried on local host lol)
-Chrome extension is frontend.
+- The heavy computation part (backend) is handled by the server (only successfully tried on local host lol)
+- Chrome extension is frontend.
 
 
 ***Setup backend***
